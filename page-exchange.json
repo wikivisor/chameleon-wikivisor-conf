@@ -5,7 +5,7 @@
     "url": "https:\/\/github.com\/https:\/\/github.com\/wikivisor\/chameleon-wikivisor.conf",
     "packages": {
         "Chameleon WikiVisor": {
-            "globalID": "Chameleon-wikivisor",
+            "globalID": "ChameleonWikiVisor",
             "description": "Custom skin configuration",
             "version": "0.1",
             "pages": [
@@ -85,3 +85,4 @@
             ]
         }
     }
+}
