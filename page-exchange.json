@@ -20,24 +20,14 @@
                "url":"https:\/\/raw.githubusercontent.com\/wikivisor\/chameleon-wikivisor-conf\/master\/MediaWiki%2FChameleon.js.mediawiki"
             },
             {
-               "name":"Gadget-Back-to-top",
-               "namespace":"NS_MEDIAWIKI",
-               "url":"https:\/\/raw.githubusercontent.com\/wikivisor\/chameleon-wikivisor-conf\/master\/MediaWiki%2FGadget-Back-to-top.mediawiki"
-            },
-            {
-               "name":"Gadget-Back-to-top.css",
+               "name":"Back-to-top.css",
                "namespace":"NS_MEDIAWIKI",
                "url":"https:\/\/raw.githubusercontent.com\/wikivisor\/chameleon-wikivisor-conf\/master\/MediaWiki%2FGadget-Back-to-top.css.mediawiki"
             },
             {
-               "name":"Gadget-Back-to-top.js",
+               "name":"Back-to-top.js",
                "namespace":"NS_MEDIAWIKI",
                "url":"https:\/\/raw.githubusercontent.com\/wikivisor\/chameleon-wikivisor-conf\/master\/MediaWiki%2FGadget-Back-to-top.js.mediawiki"
-            },
-            {
-               "name":"Gadgets-definition",
-               "namespace":"NS_MEDIAWIKI",
-               "url":"https:\/\/raw.githubusercontent.com\/wikivisor\/chameleon-wikivisor-conf\/master\/MediaWiki%2FGadgets-definition.mediawiki"
             },
             {
                "name":"Login-menu",
