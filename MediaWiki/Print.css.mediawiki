@@ -1,4 +1,5 @@
 /* CSS placed here will affect the print output */
+
 body, #toc {
 	display: block !important;
 }
