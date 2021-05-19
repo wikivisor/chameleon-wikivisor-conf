@@ -10,14 +10,14 @@
          "version":"0.1",
          "pages":[
             {
-               "name":"Common.css",
+               "name":"Chameleon.css",
                "namespace":"NS_MEDIAWIKI",
-               "url":"https:\/\/raw.githubusercontent.com\/wikivisor\/chameleon-wikivisor.conf\/master\/MediaWiki%2FCommon.css.mediawiki"
+               "url":"https:\/\/raw.githubusercontent.com\/wikivisor\/chameleon-wikivisor.conf\/master\/MediaWiki%2FChameleon.css.mediawiki"
             },
             {
-               "name":"Common.js",
+               "name":"Chameleon.js",
                "namespace":"NS_MEDIAWIKI",
-               "url":"https:\/\/raw.githubusercontent.com\/wikivisor\/chameleon-wikivisor.conf\/master\/MediaWiki%2FCommon.js.mediawiki"
+               "url":"https:\/\/raw.githubusercontent.com\/wikivisor\/chameleon-wikivisor.conf\/master\/MediaWiki%2FChameleon.js.mediawiki"
             },
             {
                "name":"Gadget-Back-to-top",
@@ -52,7 +52,7 @@
             {
                "name":"Print.css",
                "namespace":"NS_MEDIAWIKI",
-               "url":"https:\/\/raw.githubusercontent.com\/https:\/\/github.com\/wikivisor\/chameleon-wikivisor.conf\/master\/MediaWiki%2FPrint.css.mediawiki"
+               "url":"https:\/\/raw.githubusercontent.com\/wikivisor\/chameleon-wikivisor.conf\/master\/MediaWiki%2FPrint.css.mediawiki"
             },
             {
                "name":"Secondary-menu",
