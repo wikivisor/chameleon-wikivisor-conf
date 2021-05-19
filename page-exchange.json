@@ -10,14 +10,14 @@
          "version":"0.1",
          "pages":[
             {
-               "name":"Chameleon.css",
+               "name":"Chameleon-login.css",
                "namespace":"NS_MEDIAWIKI",
-               "url":"https:\/\/raw.githubusercontent.com\/wikivisor\/chameleon-wikivisor-conf\/master\/MediaWiki%2FChameleon.css.mediawiki"
+               "url":"https:\/\/raw.githubusercontent.com\/wikivisor\/chameleon-wikivisor-conf\/master\/MediaWiki%2FChameleon-login.css.mediawiki"
             },
             {
-               "name":"Chameleon.js",
+               "name":"Chameleon-load.js",
                "namespace":"NS_MEDIAWIKI",
-               "url":"https:\/\/raw.githubusercontent.com\/wikivisor\/chameleon-wikivisor-conf\/master\/MediaWiki%2FChameleon.js.mediawiki"
+               "url":"https:\/\/raw.githubusercontent.com\/wikivisor\/chameleon-wikivisor-conf\/master\/MediaWiki%2FChameleon-load.js.mediawiki"
             },
             {
                "name":"Back-to-top.css",
@@ -38,11 +38,6 @@
                "name":"Mainpage",
                "namespace":"NS_MEDIAWIKI",
                "url":"https:\/\/raw.githubusercontent.com\/wikivisor\/chameleon-wikivisor-conf\/master\/MediaWiki%2FMainpage.mediawiki"
-            },
-            {
-               "name":"Print.css",
-               "namespace":"NS_MEDIAWIKI",
-               "url":"https:\/\/raw.githubusercontent.com\/wikivisor\/chameleon-wikivisor-conf\/master\/MediaWiki%2FPrint.css.mediawiki"
             },
             {
                "name":"Secondary-menu",
