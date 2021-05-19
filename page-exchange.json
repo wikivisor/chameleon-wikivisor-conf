@@ -60,16 +60,6 @@
                "url":"https:\/\/raw.githubusercontent.com\/wikivisor\/chameleon-wikivisor-conf\/master\/MediaWiki%2FSecondary-menu.mediawiki"
             },
             {
-               "name":"Sidebar",
-               "namespace":"NS_MEDIAWIKI",
-               "url":"https:\/\/raw.githubusercontent.com\/wikivisor\/chameleon-wikivisor-conf\/master\/MediaWiki%2FSidebar.mediawiki"
-            },
-            {
-               "name":"Sitenotice",
-               "namespace":"NS_MEDIAWIKI",
-               "url":"https:\/\/raw.githubusercontent.com\/wikivisor\/chameleon-wikivisor-conf\/master\/MediaWiki%2FSitenotice.mediawiki"
-            },
-            {
                "name":"Social-menu",
                "namespace":"NS_MEDIAWIKI",
                "url":"https:\/\/raw.githubusercontent.com\/wikivisor\/chameleon-wikivisor-conf\/master\/MediaWiki%2FSocial-menu.mediawiki"
