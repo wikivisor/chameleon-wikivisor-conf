@@ -1,0 +1,10 @@
+/* CSS placed here will affect the print output */
+body, #toc {
+	display: block !important;
+}
+.toctext {
+	display: inline;
+}
+#content {
+	width: 17.8cm;
+}

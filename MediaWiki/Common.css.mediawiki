@@ -1,0 +1,6 @@
+/* CSS placed here will be applied to all skins */
+
+.page-Special_UserLogin .social-panel, 
+.page-Special_UserLogin .submenu {
+	display: none;
+}
