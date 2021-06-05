@@ -3,33 +3,33 @@
 const mq = window.matchMedia( "(max-width: 1105px)" );
 
 $(window).resize(function() {
-        autoMenu();
+		autoMenu();
 });
 
 function autoMenu() {
 	if (mq.matches) {
-           $('.submenu .p-navbar .navbar-nav').css({'flex-direction':'column','display':'flex'}).hide();
-           $('.menu-toggle').removeClass('hide-menu').addClass('show-menu').show();
+		   $('.submenu .p-navbar .navbar-nav').css({'flex-direction':'column','display':'flex'}).hide();
+		   $('.menu-toggle').removeClass('hide-menu').addClass('show-menu').show();
 	} else {
-           $('.submenu .p-navbar .navbar-nav').css({'flex-direction':'row','display':'flex'}).show();
-           $('.menu-toggle').removeClass('show-menu').addClass('hide-menu').hide();
-	}	
+		   $('.submenu .p-navbar .navbar-nav').css({'flex-direction':'row','display':'flex'}).show();
+		   $('.menu-toggle').removeClass('show-menu').addClass('hide-menu').hide();
+	}
 }
 
 $('.menu-toggle').click(function(){
-     $('.submenu .p-navbar .navbar-nav').toggle();
-     $('.edit-submenu-toggle').toggleClass('d-none d-block');
-     $(this).toggleClass('show-menu hide-menu');
+	 $('.submenu .p-navbar .navbar-nav').toggle();
+	 $('.edit-submenu-toggle').toggleClass('d-none d-block');
+	 $(this).toggleClass('show-menu hide-menu');
 });
 
 /**
  * Remove text from social icons.
- */ 
+ */
 $('.social-panel a.fab').text("");
 
 /**
  * Move TOC to the navigation panel.
- */ 
+ */
 	if($('#toc').length) {
 
 		// Create a new menu wrapper and place it on the menu bar.
@@ -42,23 +42,23 @@ $('.social-panel a.fab').text("");
 		// Make TOC elements suitable for menu dropdowns.
 			$('#toc li').addClass('nav-item');
 			$('#toc li a').addClass('nav-link');
-			
+
 			var cloned = $('#toc > ul').clone();
 			cloned.addClass('dropdown-menu').appendTo(tocmenu);
-	} 
+	}
 
 /**
  * Offset the target heading on the height of the fixed elements.
- */ 
-!function (window) 
+ */
+!function (window)
 {
 	'use strict';
 
 	// Update this function so it returns the height of your fixed headers
-	function fixedHeaderOffset() 
+	function fixedHeaderOffset()
 	{
 		if (mq.matches) {
-        	return 200;
+			return 200;
 		} else {
 			return 110;
 		}
@@ -79,8 +79,8 @@ $('.social-panel a.fab').text("");
 
 	function scrollUpToCompensateForFixedHeader()
 	{
-		var hash, 
-			target, 
+		var hash,
+			target,
 			offset;
 
 		// Get hash, e.g. #mathematics

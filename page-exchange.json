@@ -1,87 +1,88 @@
 {
-    "publisher": "WikiVisor",
-    "author": "WikiVisor",
-    "language": "en",
-    "url": "https:\/\/github.com\/https:\/\/github.com\/wikivisor\/chameleon-wikivisor.conf",
-    "packages": {
-        "Chameleon WikiVisor": {
-            "globalID": "Chameleon-wikivisor",
-            "description": "Custom skin configuration",
-            "version": "0.1",
-            "pages": [
-                {
-                    "name": "Common.css",
-                    "namespace": "NS_MEDIAWIKI",
-                    "url": "https:\/\/raw.githubusercontent.com\/https:\/\/github.com\/wikivisor\/chameleon-wikivisor.conf\/master\/MediaWiki%2FCommon.css.mediawiki"
-                },
-                {
-                    "name": "Common.js",
-                    "namespace": "NS_MEDIAWIKI",
-                    "url": "https:\/\/raw.githubusercontent.com\/https:\/\/github.com\/wikivisor\/chameleon-wikivisor.conf\/master\/MediaWiki%2FCommon.js.mediawiki"
-                },
-                {
-                    "name": "Gadget-Back-to-top",
-                    "namespace": "NS_MEDIAWIKI",
-                    "url": "https:\/\/raw.githubusercontent.com\/https:\/\/github.com\/wikivisor\/chameleon-wikivisor.conf\/master\/MediaWiki%2FGadget-Back-to-top.mediawiki"
-                },
-                {
-                    "name": "Gadget-Back-to-top.css",
-                    "namespace": "NS_MEDIAWIKI",
-                    "url": "https:\/\/raw.githubusercontent.com\/https:\/\/github.com\/wikivisor\/chameleon-wikivisor.conf\/master\/MediaWiki%2FGadget-Back-to-top.css.mediawiki"
-                },
-                {
-                    "name": "Gadget-Back-to-top.js",
-                    "namespace": "NS_MEDIAWIKI",
-                    "url": "https:\/\/raw.githubusercontent.com\/https:\/\/github.com\/wikivisor\/chameleon-wikivisor.conf\/master\/MediaWiki%2FGadget-Back-to-top.js.mediawiki"
-                },
-                {
-                    "name": "Gadgets-definition",
-                    "namespace": "NS_MEDIAWIKI",
-                    "url": "https:\/\/raw.githubusercontent.com\/https:\/\/github.com\/wikivisor\/chameleon-wikivisor.conf\/master\/MediaWiki%2FGadgets-definition.mediawiki"
-                },
-                {
-                    "name": "Login-menu",
-                    "namespace": "NS_MEDIAWIKI",
-                    "url": "https:\/\/raw.githubusercontent.com\/https:\/\/github.com\/wikivisor\/chameleon-wikivisor.conf\/master\/MediaWiki%2FLogin-menu.mediawiki"
-                },
-                {
-                    "name": "Mainpage",
-                    "namespace": "NS_MEDIAWIKI",
-                    "url": "https:\/\/raw.githubusercontent.com\/https:\/\/github.com\/wikivisor\/chameleon-wikivisor.conf\/master\/MediaWiki%2FMainpage.mediawiki"
-                },
-                {
-                    "name": "Print.css",
-                    "namespace": "NS_MEDIAWIKI",
-                    "url": "https:\/\/raw.githubusercontent.com\/https:\/\/github.com\/wikivisor\/chameleon-wikivisor.conf\/master\/MediaWiki%2FPrint.css.mediawiki"
-                },
-                {
-                    "name": "Secondary-menu",
-                    "namespace": "NS_MEDIAWIKI",
-                    "url": "https:\/\/raw.githubusercontent.com\/https:\/\/github.com\/wikivisor\/chameleon-wikivisor.conf\/master\/MediaWiki%2FSecondary-menu.mediawiki"
-                },
-                {
-                    "name": "Sidebar",
-                    "namespace": "NS_MEDIAWIKI",
-                    "url": "https:\/\/raw.githubusercontent.com\/https:\/\/github.com\/wikivisor\/chameleon-wikivisor.conf\/master\/MediaWiki%2FSidebar.mediawiki"
-                },
-                {
-                    "name": "Sitenotice",
-                    "namespace": "NS_MEDIAWIKI",
-                    "url": "https:\/\/raw.githubusercontent.com\/https:\/\/github.com\/wikivisor\/chameleon-wikivisor.conf\/master\/MediaWiki%2FSitenotice.mediawiki"
-                },
-                {
-                    "name": "Social-menu",
-                    "namespace": "NS_MEDIAWIKI",
-                    "url": "https:\/\/raw.githubusercontent.com\/https:\/\/github.com\/wikivisor\/chameleon-wikivisor.conf\/master\/MediaWiki%2FSocial-menu.mediawiki"
-                },
-                {
-                    "name": "User-menu",
-                    "namespace": "NS_MEDIAWIKI",
-                    "url": "https:\/\/raw.githubusercontent.com\/https:\/\/github.com\/wikivisor\/chameleon-wikivisor.conf\/master\/MediaWiki%2FUser-menu.mediawiki"
-                }
-            ],
-            "requiredExtensions": [
+	"publisher": "WikiVisor",
+	"author": "WikiVisor",
+	"language": "en",
+	"url": "https:\/\/github.com\/https:\/\/github.com\/wikivisor\/chameleon-wikivisor.conf",
+	"packages": {
+		"Chameleon WikiVisor": {
+			"globalID": "Chameleon-wikivisor",
+			"description": "Custom skin configuration",
+			"version": "0.1",
+			"pages": [
+				{
+					"name": "Common.css",
+					"namespace": "NS_MEDIAWIKI",
+					"url": "https:\/\/raw.githubusercontent.com\/https:\/\/github.com\/wikivisor\/chameleon-wikivisor.conf\/master\/MediaWiki%2FCommon.css.mediawiki"
+				},
+				{
+					"name": "Common.js",
+					"namespace": "NS_MEDIAWIKI",
+					"url": "https:\/\/raw.githubusercontent.com\/https:\/\/github.com\/wikivisor\/chameleon-wikivisor.conf\/master\/MediaWiki%2FCommon.js.mediawiki"
+				},
+				{
+					"name": "Gadget-Back-to-top",
+					"namespace": "NS_MEDIAWIKI",
+					"url": "https:\/\/raw.githubusercontent.com\/https:\/\/github.com\/wikivisor\/chameleon-wikivisor.conf\/master\/MediaWiki%2FGadget-Back-to-top.mediawiki"
+				},
+				{
+					"name": "Gadget-Back-to-top.css",
+					"namespace": "NS_MEDIAWIKI",
+					"url": "https:\/\/raw.githubusercontent.com\/https:\/\/github.com\/wikivisor\/chameleon-wikivisor.conf\/master\/MediaWiki%2FGadget-Back-to-top.css.mediawiki"
+				},
+				{
+					"name": "Gadget-Back-to-top.js",
+					"namespace": "NS_MEDIAWIKI",
+					"url": "https:\/\/raw.githubusercontent.com\/https:\/\/github.com\/wikivisor\/chameleon-wikivisor.conf\/master\/MediaWiki%2FGadget-Back-to-top.js.mediawiki"
+				},
+				{
+					"name": "Gadgets-definition",
+					"namespace": "NS_MEDIAWIKI",
+					"url": "https:\/\/raw.githubusercontent.com\/https:\/\/github.com\/wikivisor\/chameleon-wikivisor.conf\/master\/MediaWiki%2FGadgets-definition.mediawiki"
+				},
+				{
+					"name": "Login-menu",
+					"namespace": "NS_MEDIAWIKI",
+					"url": "https:\/\/raw.githubusercontent.com\/https:\/\/github.com\/wikivisor\/chameleon-wikivisor.conf\/master\/MediaWiki%2FLogin-menu.mediawiki"
+				},
+				{
+					"name": "Mainpage",
+					"namespace": "NS_MEDIAWIKI",
+					"url": "https:\/\/raw.githubusercontent.com\/https:\/\/github.com\/wikivisor\/chameleon-wikivisor.conf\/master\/MediaWiki%2FMainpage.mediawiki"
+				},
+				{
+					"name": "Print.css",
+					"namespace": "NS_MEDIAWIKI",
+					"url": "https:\/\/raw.githubusercontent.com\/https:\/\/github.com\/wikivisor\/chameleon-wikivisor.conf\/master\/MediaWiki%2FPrint.css.mediawiki"
+				},
+				{
+					"name": "Secondary-menu",
+					"namespace": "NS_MEDIAWIKI",
+					"url": "https:\/\/raw.githubusercontent.com\/https:\/\/github.com\/wikivisor\/chameleon-wikivisor.conf\/master\/MediaWiki%2FSecondary-menu.mediawiki"
+				},
+				{
+					"name": "Sidebar",
+					"namespace": "NS_MEDIAWIKI",
+					"url": "https:\/\/raw.githubusercontent.com\/https:\/\/github.com\/wikivisor\/chameleon-wikivisor.conf\/master\/MediaWiki%2FSidebar.mediawiki"
+				},
+				{
+					"name": "Sitenotice",
+					"namespace": "NS_MEDIAWIKI",
+					"url": "https:\/\/raw.githubusercontent.com\/https:\/\/github.com\/wikivisor\/chameleon-wikivisor.conf\/master\/MediaWiki%2FSitenotice.mediawiki"
+				},
+				{
+					"name": "Social-menu",
+					"namespace": "NS_MEDIAWIKI",
+					"url": "https:\/\/raw.githubusercontent.com\/https:\/\/github.com\/wikivisor\/chameleon-wikivisor.conf\/master\/MediaWiki%2FSocial-menu.mediawiki"
+				},
+				{
+					"name": "User-menu",
+					"namespace": "NS_MEDIAWIKI",
+					"url": "https:\/\/raw.githubusercontent.com\/https:\/\/github.com\/wikivisor\/chameleon-wikivisor.conf\/master\/MediaWiki%2FUser-menu.mediawiki"
+				}
+			],
+			"requiredExtensions": [
 		"Bootstrap"
-            ]
-        }
-    }
+			]
+		}
+	}
+}
