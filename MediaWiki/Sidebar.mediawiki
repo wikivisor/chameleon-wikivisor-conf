@@ -1,7 +1,0 @@
-* Services
-** recentchanges-url|recentchanges
-** randompage-url|randompage
-** helppage|help-mediawiki
-* SEARCH
-* TOOLBOX
-* LANGUAGES

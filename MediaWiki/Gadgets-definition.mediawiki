@@ -1,1 +1,0 @@
-* Back-to-top[ResourceLoader|default]|Back-to-top.css|Back-to-top.js
