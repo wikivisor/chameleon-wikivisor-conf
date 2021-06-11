@@ -105,3 +105,14 @@ if ($('#toc').length) {
 	}
 
 }(window);
+
+var submenu = $('.submenu').offset();
+var $window = $(window);
+
+$window.scroll(function () {
+	if ($window.scrollTop() >= submenu.top) {
+		$('.submenu').removeClass('').addClass('sticky');
+	} else {
+		$('.submenu').removeClass('sticky').addClass('');
+	}
+});
