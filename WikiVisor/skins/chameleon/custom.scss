@@ -5,36 +5,37 @@ $theme-color-menu: #52575d;
 $theme-color-accent: #ffc107;
 $theme-color-danger: #e8214e;
 $theme-color-light: #b08fe6;
+$theme-menu-font-size: 15px;
 
 %custom_button {
-	padding: 0 8px;
-	border-radius: 3px;
-	color: #eee;
-	background: #fff;
-	font-size: 1.3rem;
-	cursor: pointer;
+        padding: 0 8px;
+        border-radius: 3px;
+        color: #eee;
+        background: #fff;
+        font-size: 1.3rem;
+        cursor: pointer;
 }
 html {
-	font-size: 1rem;
+  font-size: 1rem;
 }
 body {
-	/*	overflow-y: scroll; */
+	overflow-x: hidden;
 }
 @media screen and ( min-width: 576px ) {
-	html {
-		font-size: 1.05rem;
-	}
+  html {
+    font-size: 1.05rem;
+  }
 }
 
 @media screen and ( min-width: 768px ) {
-	html {
-		font-size: 1.1rem;
-	}
+  html {
+    font-size: 1.1rem;
+  }
 }
 @media screen and ( min-width: 992px ) {
-	html {
-		font-size: 1.2rem;
-	}
+  html {
+    font-size: 1.2rem;
+  }
 }
 
 .banner {
@@ -57,7 +58,7 @@ body {
 		}
 	}
 }
-#p-logo {
+#p-logo { 
 	@extend .text-center;
 	img {
 		@extend .rounded;
@@ -79,25 +80,26 @@ body {
 }
 .footer-places {
 	&> div {
-		font-size: 11pt !important;
+		font-size: $theme-menu-font-size !important;
 	}
 }
 .navbar-nav {
 	a, a:visited, a:hover, a:focus, a:active {
 		color: #444;
 		height: 100%;
-		font-size: 11pt;
+		font-size: $theme-menu-font-size;
 	}
 }
 .topmenu {
 	@extend .bg-dark;
 	@extend .shadow;
-	z-index: 1;
-	position: sticky;
+	z-index: 1020;
+        position: sticky;
 	top:0;
+	height: 40px !important;
 	.p-navbar {
 		@extend .bg-transparent;
-		/*	height: 40px; */
+	/*	height: 40px; */
 		&>.navbar-nav {
 			@extend .w-100;
 			.navbar-tools {
@@ -108,7 +110,7 @@ body {
 			a, a:visited, a:hover, a:focus, a:active {
 				color: #ccc !important;
 				height: 100%;
-				font-size: 11pt;
+				font-size: $theme-menu-font-size;
 			}
 			a {
 				&:hover, &[aria-expanded="true"] {
@@ -122,8 +124,32 @@ body {
 					content: 'Sign In';
 					font-family: inherit;
 				}
-			}
+			}	
 			.show {
+			}
+		}
+	}
+	.dropdown-toggle {
+		height: 40px !important;
+	}
+}
+#p-personal {
+	.p-personal-tools {
+		height: 40px;
+		align-items: center;
+		li {
+	                display: none;
+			@extend .m-0;
+			a {
+				@extend .d-flex;
+				@extend .align-items-center;
+				@extend .py-0;
+				@extend .px-2;
+				height: 40px;
+				&:hover {
+					@extend .text-decoration-none;
+					background-color: $theme-color-menu;
+				}
 			}
 		}
 	}
@@ -156,12 +182,12 @@ body {
 	@extend .m-0;
 	@extend .py-1;
 	background-color: $theme-color-menu !important;
-	border-top-left-radius: 0 !important;
-	border-top-right-radius: 0 !important;
+	border-top-left-radius: 0 !important;	
+	border-top-right-radius: 0 !important;	
 	border: 1px solid $theme-color-menu !important;
-	background-clip: border-box !important;
+	background-clip: border-box !important;	
 	box-shadow: 0 1rem 1rem rgb(0 0 0 / 18%) !important;
-	a {
+	a {	
 		color: #ddd !important;
 	}
 	.nav-item, &>div {
@@ -174,6 +200,9 @@ body {
 			}
 		}
 	}
+	.show {
+		z-index: 1040;
+	}
 }
 .dropdown-toggle {
 	&:after {
@@ -181,58 +210,62 @@ body {
 	}
 }
 #p-search {
-	input, button {
-		@extend .shadow-none;
-		@extend .border-0;
-		@extend .rounded-0;
-		@extend .bg-white;
-		background-image: none;
+        input, button {
+                @extend .shadow-none;
+                @extend .border-0;
+                @extend .rounded-0;
+                @extend .bg-white;
+                background-image: none;
+        }
+        #searchform {
+                @extend %custom_button; 
+                &:hover {
+                }
+                &:focus, &:active {
+                        button {
+                                &:before {
+                                        color: $theme-color-primary;
+                                }
+                        }
+                }
+        }
+	#searchInput {
+		@extend .text-center;
+		font-size: 15px 
 	}
-	#searchform {
-		@extend %custom_button;
-		&:hover {
-		}
-		&:focus, &:active {
-			button {
-				&:before {
-					color: $theme-color-primary;
-				}
-			}
-		}
-	}
-	.form-control {
-		@extend .bg-transparent;
-		&::placeholder {
-			color: #999;
-		}
-	}
+        .form-control {
+                @extend .bg-transparent;
+                &::placeholder {
+                        color: #999;
+                }
+        }
 	.input-group-append {
+		@extend .d-none;
 		.mw-searchButton {
-			z-index: 0;
+/*			z-index: 0;*/
 		}
 	}
 }
 @media ( max-width: 767px ) {
-	#p-search {
-		input, button {
-			@extend .shadow-none;
-			@extend .border-0;
-			@extend .rounded-0;
-			@extend .bg-white;
-			background-image: none;
-		}
-		#searchform {
-			padding: 0 20px;
-			border: 0 !important;
-			font-size: 1rem;
-			&:hover {
-				box-shadow: none;
-				color: #fff;
-				border-color: #fff;
-				/* background-color: rgba(255,255,255,.2);*/
-			}
-		}
-	}
+#p-search {
+	padding: .25rem;
+        input, button {
+                @extend .shadow-none;
+                @extend .border-0;
+                @extend .rounded-0;
+                @extend .bg-white;
+                background-image: none;
+        }
+        #searchform {
+                border: 0 !important;
+                font-size: 1rem;
+                &:hover {
+                        box-shadow: none;
+                        color: #fff;
+                        border-color: #fff;
+                }
+        }
+}
 }
 #ca-talk, #ca-viewsource {
 	@extend .d-none;
@@ -249,7 +282,7 @@ body {
 	@extend .m-0;
 }
 .pagetools, .pagetools .tab-group {
-	font-size: 11pt !important;
+	font-size: $theme-menu-font-size !important;
 }
 #localNotice {
 	@extend .container;
@@ -260,21 +293,16 @@ body {
 	@extend .justify-content-center;
 	@extend .mb-3;
 	background-color: rgba(255,255,255,.3);
-	p {
+	p {	
 		@extend .my-2;
-		font-size: 11pt;
-	}
+		font-size: $theme-menu-font-size;
+	}	
 }
 .p-tb-toggle {
 	&:before {
 		@extend .d-none;
 	}
 }
-
-/**
-* Themeing the elements
-*/
-
 .mw-ui-input:focus {
 	border-color: $theme-color-primary;
 	box-shadow: inset 0 0 0 1px $theme-color-primary;
@@ -294,33 +322,11 @@ body {
 	background-color: $theme-color-hover;
 	border-color: $theme-color-hover;
 }
-button, [type="submit"] {
-	background-color: $theme-color-primary !important;
-	border-color: $theme-color-primary !important;
-}
-[type="checkbox"]:checked + span {
-	background-color: $theme-color-primary !important;
-	border-color: $theme-color-primary !important;
-}
-[type="radio"]:checked + span {
-	border-color: $theme-color-primary !important;
-}
-.oo-ui-dropdownWidget-handle, .oo-ui-textInputWidget.oo-ui-widget-enabled .oo-ui-inputWidget-input, [type="checkbox"], [type="radio"] {
-	&:focus, &:active, &:focus + span, &:active + span {
-		border-color: $theme-color-primary !important;
-		box-shadow: inset 0 0 0 1px $theme-color-primary !important;
-	}
-}
-
-/**
-* Styling Login page
-*/
-
 #userloginForm, #userloginprompt {
 	@extend .m-auto;
 }
 .mw-special-Userlogin {
-	.mw-ui-container {
+	 .mw-ui-container {
 		@extend .d-flex;
 		@extend .flex-column;
 		@extend .mt-4;
@@ -335,11 +341,6 @@ button, [type="submit"] {
 		@extend .d-none;
 	}
 }
-
-/**
-* Styling search autocomplete dropdown
-*/
-
 .suggestions {
 	@extend .rounded;
 	.suggestions-results {
@@ -351,15 +352,10 @@ button, [type="submit"] {
 		color: #fff;
 	}
 }
-
-/**
-* Styling secondary menu
-*/
-
 .submenu {
 	&.sticky {
 		position: sticky;
-		z-index: 1020;
+		z-index: 1020; 
 		top: 0;
 	}
 }
@@ -368,75 +364,93 @@ button, [type="submit"] {
 		background: #fff;
 		.navbar-nav {
 			display: flex;
-		}
-	}
-}
-@media screen and ( max-width: 1105px ) {
-	.submenu {
-		top: 38px;
-		.p-navbar {
-			.navbar-nav {
-				display: none;
-				width: 100%;
-				flex-direction: column !important;
-				background: #a6aaae;
-				.nav-item.show {
-					a {
-						font-weight: bold;
+			.nav-link {
+				color: #ddd !important;
+				&.dropdown-toggle {
+					color: #444 !important;
+					&:hover, &:active, &:focus {
+						color: #ddd !important;
 					}
 				}
 			}
 		}
-		.dropdown-menu {
-			position: relative !important;
-			float: none;
-			min-width: unset;
-			width: 100%;
-			padding: 0;
-			margin: 0;
-			box-shadow: none;
+	}
+}
+@media screen and ( max-width: 1105px ) {
+.submenu {
+	top: 38px;
+	.p-navbar {
+		.navbar-nav {
 			display: none;
-			flex-direction: column;
-			transform: none !important;
-			border-radius: 0 !important;
-			padding-bottom: .25rem;
-			background: $theme-color-light;
-			&.show {
-				display: block;
+		        width: 100%;
+			flex-direction: column !important;
+			background-color: #b68aff;
+			.nav-item.show {
+				a {
+					font-weight: bold;
+				}
+			}
+			&>.nav-item >.nav-link:hover {
+				background-color: rgba(0,0,0,.06);
 			}
 		}
-		.p-tb-toggle {
-			width: 100%;
-		}
 	}
+        .dropdown-menu {
+                position: relative !important;
+                float: none;
+                min-width: unset;
+		width: 100%;
+                padding: 0;
+                margin: 0;
+                box-shadow: none;
+                display: none;
+                flex-direction: column;
+		transform: none !important;
+		border-radius: 0 !important;
+		padding-bottom: .25rem;
+		background: $theme-color-light;
+		&.show {
+			display: block;
+		}
+        }
+	.p-tb-toggle {
+		width: 100%;
+	}
+}
 }
 .menu-toggle {
 	position: absolute;
-	z-index: 1;
-	margin-left: -40px;
+/*	z-index: 1;*/
+	right: 0;
+	&:hover {
+		background-color: $theme-color-menu;
+	}
 }
 .menu-toggle::before {
-	font-family: 'Font Awesome 5 Free';
-	font-weight: 900;
-	height: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-size: 1.2rem;
-	height: 40px;
-	width: 40px;
-	content: '\f0c9';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    height: 40px;
+    width: 40px;
+    content: '\f0c9';
 }
 .menu-toggle.show-menu::before {
 	color: #9967ca /* $theme-color-primary */;
 }
 .menu-toggle.hide-menu::before {
-	color: #fff /* $theme-color-danger */;
+	color: #b68aff /* $theme-color-danger */;
 }
 #p-contentnavigation {
-	position: sticky;
-	top: 38px;
-	border-radius: 3px;
+	&.sticky {
+		position: sticky;
+	        z-index: 1019;
+		top: 38px;
+	}
+        border-radius: 3px;
 	background: #fff;
 }
 .ve-active #p-contentnavigation {
@@ -444,21 +458,12 @@ button, [type="submit"] {
 	top: 0;
 }
 
-/**
-* Styling headings
-*/
-
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	border-bottom-width: 0 !important;
 }
 h1, h2, h3, h4, h5, h6 {
 	@extend .mt-3;
 }
-
-/**
-* Styling footer
-*/
-
 .footer-info {
 	font-size: 12pt;
 }
@@ -477,56 +482,46 @@ h1, h2, h3, h4, h5, h6 {
 		}
 	}
 }
-
-/**
-* Simplify special list views on small screens
-*/
-
 @media screen and ( max-width: 768px ){
-	.page-Special_RecentChanges,
-	.page-Special_TrackingCategories,
-	.page-Special_ListGroupRights,
-	.page-Special_RecentChangesLinked,
-	.page-Special_Watchlist,
-	.page-Special_MediaStatistics,
-	.page-Special_AllMessages,
-	.page-Special_Version {
-		table, tr {
-			display: flex;
-			flex-direction: column;
-			margin: 0 !important;
-			width: 100%;
-			border: 0 !important;
-			.mw-collapsible-toggle {
-				float: none !important;
-			}
-		}
-		tr {
-			background: #fff;
-			margin-bottom: .5rem !important;
-			padding: .25rem .5rem;
-			border-radius: 3px;
-		}
-		td {
-			border: 0 !important;
-			background: transparent !important;
-		}
-		th {
-			border: 0 !important;
-		}
-		.mw-rcfilters-ui-highlights {
-			display: inline-block;
-			float: right;
-			padding-top: 16px;
-			margin-bottom: -16px;
+.page-Special_RecentChanges, 
+.page-Special_TrackingCategories, 
+.page-Special_ListGroupRights, 
+.page-Special_RecentChangesLinked, 
+.page-Special_Watchlist,
+.page-Special_MediaStatistics,
+.page-Special_AllMessages,
+.page-Special_Version {
+	table, tr {
+		display: flex;
+		flex-direction: column;
+		margin: 0 !important;
+		width: 100%;
+		border: 0 !important;
+		.mw-collapsible-toggle {
+			float: none !important;
 		}
 	}
+	tr {
+		background: #fff;
+		margin-bottom: .5rem !important;
+		padding: .25rem .5rem;
+		border-radius: 3px;
+	}
+	td {
+		border: 0 !important;
+		background: transparent !important;
+	}
+	th {
+		border: 0 !important;
+	}
+.mw-rcfilters-ui-highlights {
+    display: inline-block;
+    float: right;
+    padding-top: 16px;
+    margin-bottom: -16px;
 }
-
-/**
-* Main page has no firstHeading
-*/
-
+}
+}
 .page-Main_Page {
 	#firstHeading {
 		@extend .d-none;
@@ -536,10 +531,17 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
-/**
-* Adapt TOC for the dropdown-menu
-*/
+/* FIXES */
 
+.topmenu, .topmenu * {
+	border-width: 0 !important;
+}
+
+.navbar.navbar-fixed-top, .submenu {
+	~ * .ve-ui-toolbar-floating > .oo-ui-toolbar-bar {
+		transform: translateY(38px);
+	}
+}
 #toc {
 	display: none;
 }
@@ -563,24 +565,61 @@ h1, h2, h3, h4, h5, h6 {
 		}
 	}
 	.tocnumber {
-		/*		@extend .d-none;*/
+/*		@extend .d-none;*/
 		color: #aaa;
 	}
 }
-
-/* FIXES */
-
-.topmenu, .topmenu * {
-	@extend .border-0;
+button, [type="submit"] {
+    background-color: $theme-color-primary !important;
+    border-color: $theme-color-primary !important;
 }
-.navbar.navbar-fixed-top, .submenu {
-	~ * .ve-ui-toolbar-floating > .oo-ui-toolbar-bar {
-		transform: translateY(38px);
+[type="checkbox"]:checked + span {
+    background-color: $theme-color-primary !important;
+    border-color: $theme-color-primary !important;
+}
+[type="radio"]:checked + span {
+    border-color: $theme-color-primary !important;
+}
+.oo-ui-dropdownWidget-handle, .oo-ui-textInputWidget.oo-ui-widget-enabled .oo-ui-inputWidget-input, [type="checkbox"], [type="radio"] {
+	&:focus, &:active, &:focus + span, &:active + span {
+		border-color: $theme-color-primary !important;
+		box-shadow: inset 0 0 0 1px $theme-color-primary !important;
 	}
 }
 .oo-ui-menuSelectWidget {
-	z-index: 12;
+/*    z-index: 12; */
 }
-.mw-body .mw-editsection {
-	font-size: 11pt;
+.mw-body {
+	.mw-editsection {
+		font-size: $theme-menu-font-size !important;
+	}
+}
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button {
+    color: #fff;
+}
+
+@media print {
+body, #toc {
+	display: block !important;
+}
+.toctext {
+	display: inline;
+}
+#content {
+	width: 17.8cm;
+}
+}
+
+.social-panel a.fab {
+	content: '';
+        font-size: 0;
+}
+.postedit-container {
+	top:60px !important;
+        right: 60px !important;
+	.postedit {
+		@extend .border-0;
+		@extend .rounded;
+	        opacity: .8;
+	}
 }

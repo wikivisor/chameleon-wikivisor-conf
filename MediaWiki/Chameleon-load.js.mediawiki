@@ -111,10 +111,11 @@ if ($('#toc').length) {
 var submenu = $('.submenu').offset();
 var $window = $(window);
 
+
 $window.scroll(function () {
-	if ($window.scrollTop() >= submenu.top) {
-		$('.submenu').removeClass('').addClass('sticky');
-	} else {
-		$('.submenu').removeClass('sticky').addClass('');
-	}
+    if ($window.scrollTop() >= submenu.top) {
+	$(".submenu, #p-contentnavigation").removeClass("").addClass("sticky");
+    } else {
+	$(".submenu, #p-contentnavigation").removeClass("sticky").addClass("");
+    }
 });
