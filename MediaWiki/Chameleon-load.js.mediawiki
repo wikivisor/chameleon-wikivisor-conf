@@ -106,6 +106,8 @@ if ($('#toc').length) {
 
 }(window);
 
+// Make submenu sticky when it reaches the top on scroll
+
 var submenu = $('.submenu').offset();
 var $window = $(window);
 
